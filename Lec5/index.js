@@ -1,10 +1,7 @@
 //importing the dependency
 const express = require("express");
-const bodyParser = require("body-parser");
 //creating a server instance
 const app = express();
-//Middlewares: modifies client request to handle non business logic
-app.use(express.json()); //middlewares
 
 //localhost:3000
 app.get("/", (req, res) => {
@@ -25,10 +22,7 @@ app.get("/home", (req, res) => {
 users = [];
 app.post("/users", (req, res) => {
   const { name, age, email, password, phone } = req.body; // const name = req.body.name;
-  if (!name || !email || !password) {
-    return res.status(404).send({ message: "Please fill the required fields" });
-  }
-  users.push(req.body);
+
   //JSON -> JS obj  JSON.parse()
   console.log(req.body);
   res

@@ -42,6 +42,7 @@ app.post("/todos", async (req, res) => {
  * 'todos/:id'
  */
 app.get("/updateTodo/:id", (req, res) => res.render("updateTodo", { id }));
+
 app.patch("/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;

@@ -1,0 +1,7 @@
+GET    /blogs           :Get all blogs     
+GET    /blogs/:id       :Get blog by id
+GET    /blogs/new       :Renders view to add a blog
+POST   /blogs           :Create a new blog
+GET    /blogs/:id/edit  :Renders view to update a blog
+PATCH  /blogs/:id       :Update a specific blog
+DELETE /blogs/:id       :Deletes a specific blog by id

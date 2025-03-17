@@ -1,3 +1,10 @@
 git init 
 git add .
 git status
+git commit -m ''
+git log
+git reset <commit_hash>
+git branch -M main
+git branch auth
+git remote add origin 'https://github.com/username/repo.git'
+git push origin main

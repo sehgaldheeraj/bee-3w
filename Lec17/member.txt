@@ -1,0 +1,10 @@
+git remote add upstream 'https://g.com/sehgal/repo.git'
+git clone 'https://g.com/sehgal/repo.git'
+git branch auth
+git checkout auth
+git commit -a
+git push upstream main : push to owners main branch
+git push origin main : push to your main branch
+
+git push origin auth : push to your auth branch
+
